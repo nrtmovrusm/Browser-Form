@@ -1,3 +1,50 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-  background-color: violet;
+  background-color: white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+}
+
+label {
+  display: grid;
+  grid-template-columns: 200px;
+  margin-bottom: 20px;
+}
+
+.error.active {
+  background-color: rgb(188, 69, 69);
+  color: white;
+  font-size: 14px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+button {
+  width: 80px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit {
+  background-color: rgb(69, 188, 85);
+  color: white;
+  font-size: 14px;
 }

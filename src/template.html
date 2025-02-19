@@ -5,5 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webpack Template</title>
   </head>
-  <body></body>
+  <body>
+    <form method="post" novalidate>
+      <label for="email"
+        >Email*:
+        <input type="email" id="email" name="email" required />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="country"
+        >Country*:
+        <select id="country">
+          <option value="us">United States</option>
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="nl">The Netherlands</option>
+        </select>
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="postal-code"
+        >Postal Code*:
+        <input type="text" id="postal-code" name="postal-code" required />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="password"
+        >Password*:
+        <input
+          type="text"
+          id="password"
+          name="password"
+          required
+          minlength="8"
+        />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <label for="confirm-password"
+        >Confirm Password*:
+        <input
+          type="text"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <div class="btn-container">
+        <button>Submit</button>
+        <span class="error" aria-live="polite"></span>
+      </div>
+    </form>
+  </body>
 </html>
